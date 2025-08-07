@@ -13,7 +13,7 @@ This project explores whether a neural network can be trained to recognize genre
 We used [Musicmap](https://musicmap.info/), a research-based web resource that categorizes ~250 modern Western music genres and defines inter-genre influences and “supergenre” clusters. From this, we built a weighted graph of genres, supergenres, and clusters of supergenres, and computed distances between them. Inspired by prior work on hierarchical loss functions,[^2] we also created a "soft" loss function that uses the weighted distance between genres, thereby enabling models to prioritize misclassifications that are “closer” in genre space.
 
 ## Data and Features  
-Using Musicmap's curated playlists (~10 songs per genre), we split the songs in each genre into 70/20/10 train/validation/test sets. Following recommendations from the literature,[^3] we split each song into 15-second segments and augmented each segment with a version that was pitch-shifted by +1 semitone and a version with pink noise added at a scale of 0.005. We balanced the classes by randomly selecting 24 segments from each song. Then, we used librosa to engineer the following features for each segment:
+Using Musicmap's curated playlists (~10 songs per genre), we split the songs in each genre into 70/20/10 train/validation/test sets. Following recommendations from the literature,[^3] we split each song into 15-second segments and augmented each segment with a version that was pitch-shifted by +1 semitone and a version with pink noise added at a scale of 0.005. We balanced the classes by randomly selecting 24 segments from each song. Then, we used `librosa` to engineer the following features for each segment:
 - Chromagram
 - Constant-Q chromagram
 - Normalized chroma energy
@@ -43,7 +43,7 @@ Our baseline model achieved:
 - **Top-3 Supergenre Accuracy:** 36.6%  
 - **Mean Genre Distance:** 3.54  
 
-Our best model—a dual-backbone ResNet18 using mel PCEN + MFCC features with a soft loss—achieved:  
+Our best model—a dual-backbone ResNet18flex using mel PCEN + MFCC features with a soft loss—achieved:  
 - **Top-3 Accuracy:** 24.6%  
 - **Top-3 Supergenre Accuracy:** 50.8%  
 - **Mean Genre Distance:** 2.44  
@@ -52,34 +52,22 @@ Evaluating this model against the reserved test set data showed these metrics ar
 
 ## Key Insights  
 - This project makes two significant contributions. The first is our creation of a graph to model the relationships and distance between genres and the second is our creation of a “soft loss” function to train a neural network based on these distances. This accommodates being “close” even if not completely correct.  
-- The Musicmap playlist dataset is relatively small. With only 10 songs per genre, the variation within each genre is still too large to be well-represented. To avoid overfitting the training set, we need more data.  
+- The Musicmap playlist dataset is relatively small. There may be a considerable amount of sonic variation within genres, and with only 10 songs per genre, our dataset may not be large enough to identify key sonic features. 
 - It is unclear whether audio is sufficient for determining genre using this more socially and historically informed notion of genre, particularly with the fine-grained approach taken here.  
 
 
 ## Files
 
-### [musicmap_helpers.py](./musicmap_helpers.py)
-A utility module used across most training and testing scripts. Includes functions to:
-- Compute the mean and standard deviation of image folders
-- Detect and configure GPU availability
-- Implement soft labeling loss
-- Compute top-k accuracy
-- Evaluate validation batches, reporting genre/supergenre top-1/3/5 accuracy, mean/std distance, and confusion matrices
-- Plot metrics across epochs
-- Inspect image dimensions
-- Create paired-feature datasets
 
-### [Musicmap.html](./Musicmap.html)
-Saved HTML of the [Musicmap.info](https://musicmap.info/) site, used to construct the genre graph and shortest-distance matrix for loss computation.
 
 ### [requirements.txt](./requirements.txt)
 Dependency list to replicate the environment (e.g., in AzureML).
 
 ---
 
-### [Deployment_local](./Deployment_local/)
+### [Deployment local](./Deployment%20local/)
 Contains code and assets for deploying the model using Gradio:
-- `best_model.pth`: Large file (not included)
+- `best_model.pth`: Weights from the trained ResNet18flex_dual model (large file, available from [huggingface](https://huggingface.co/spaces/aarondweinberg/music_genre_prediction))
 - [class_names.txt](./Deployment_local/class_names.txt): Ordered genre names
 - [gradio_app.py](./Deployment_local/gradio_app.py): Gradio interface that:
   - Splits audio into 15-second segments
@@ -113,6 +101,7 @@ Contains evaluation outputs from final trained models:
 Used to generate the graph structure for graph-aware loss:
 - [musicmap_graph_creator.py](./Graph%20Creation/musicmap_graph_creator.py): Builds the graph and shortest-path matrix
 - [musicmap_genres_withexplicitsupergenres.csv](./Graph%20Creation/musicmap_genres_withexplicitsupergenres.csv): Genre metadata including supergenres, clusters, and nodes
+- [Musicmap.html](./Musicmap.html): Saved HTML of the [Musicmap.info](https://musicmap.info/) site, used to construct the genre graph and shortest-distance matrix for loss computation.
 
 ---
 
@@ -133,7 +122,7 @@ Notebooks and scripts for model training/testing:
 - [training_ResNet18flex_dual_melpcen_chromacq.py](./Training%20and%20Testing/training_ResNet18flex_dual_melpcen_chromacq.py)
 - [training_ResNet18flex_dual_melpcen_mfcc.py](./Training%20and%20Testing/training_ResNet18flex_dual_melpcen_mfcc.py)
 - [training_ResNet18flex.py](./Training%20and%20Testing/training_ResNet18flex.py)
-- Notebooks:
+- Notebooks (file name indicates the model, weights, features, and loss function):
   - [training_resnet50_pretrained_15secfeatures_crossentropy.ipynb](./Training%20and%20Testing/training_resnet50_pretrained_15secfeatures_crossentropy.ipynb)
   - [training_resnet50_pretrained_15secfeaturesaugmented_crossentropy.ipynb](./Training%20and%20Testing/training_resnet50_pretrained_15secfeaturesaugmented_crossentropy.ipynb)
   - [training_resnet50_pretrained_15secfeaturesaugmented_softlabeling.ipynb](./Training%20and%20Testing/training_resnet50_pretrained_15secfeaturesaugmented_softlabeling.ipynb)
@@ -143,11 +132,11 @@ Notebooks and scripts for model training/testing:
 
 ### [Tuning](./Tuning/)
 Code for hyperparameter and feature-space tuning:
-- Architecture-specific beta sweeps:
+- Architecture-specific beta sweeps for hyper parameter tuning:
   - [CNN](./Tuning/tuning_beta_CNN.py) / [GRU](./Tuning/tuning_beta_GRU.py) / [LSTM](./Tuning/tuning_beta_LSTM.py) / [ResNet18flex](./Tuning/tuning_beta_resnet18flex.py)
-- [tuning_graphweights_resnet18flex_optuna.py](./Tuning/tuning_graphweights_resnet18flex_optuna.py): Graph weight tuning via Optuna
+- [tuning_graphweights_resnet18flex_optuna.py](./Tuning/tuning_graphweights_resnet18flex_optuna.py): Tuning of graph weight hyper parameters via Optuna
 - [tuning_resnet18flex_cuda.ipynb](./Tuning/tuning_resnet18flex_cuda.ipynb) & [tuning_resnet18flex_mps.ipynb](./Tuning/tuning_resnet18flex_mps.ipynb): Hardware-accelerated training
-- [feature_loop_resnet18flex.py](./Tuning/feature_loop_resnet18flex.py): Single-feature performance
+- [feature_loop_resnet18flex.py](./Tuning/feature_loop_resnet18flex.py): Evaluating ResNet18flex for single-feature performance
 - [feature_loop_resnet18flex_dual.py](./Tuning/feature_loop_resnet18flex_dual.py): Dual-feature performance
 
 ---
@@ -159,6 +148,15 @@ Scripts for dataset prep, organization, and file management:
 - [genre_file_and_folder_renamer.py](./Utilities/genre_file_and_folder_renamer.py): Renames non-Musicmap genre labels
 - [musicmap_data_splitter_featuresaligned.ipynb](./Utilities/musicmap_data_splitter_featuresaligned.ipynb): Splits data and prepares feature folders
 - [Musicmap_Directory_Renaming.ipynb](./Utilities/Musicmap_Directory_Renaming.ipynb): Converts between Musicmap-style and human-readable folder names
+- [musicmap_helpers.py](./Utilities/musicmap_helpers.py): A utility module used across most training and testing scripts. Includes functions to:
+	- Compute the mean and standard deviation of image folders
+	- Detect and configure GPU availability
+	- Implement soft labeling loss
+	- Compute top-k accuracy
+	- Evaluate validation batches, reporting genre/supergenre top-1/3/5 accuracy, mean/std distance, and confusion matrices
+	- Plot metrics across epochs
+	- Inspect image dimensions
+	- Create paired-feature datasets
 
 [^1]: Green, O., Sturm, B., Born, G., & Wald-Fuhrmann, M. (2024). A critical survey of research in music genre recognition. *International Society for Music Information Retrieval*.
 [^2]: Bertinetto, L., Mueller, R., Tertikas, K., Samangooei, S., & Lord, N. A. (2020). Making better mistakes: Leveraging class hierarchies with deep networks. In *Proceedings of the IEEE/CVF conference on computer vision and pattern recognition* (pp. 12506-12515).
