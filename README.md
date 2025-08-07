@@ -2,6 +2,8 @@
 **Aaron Weinberg, Emilie Wiesner, Dan Visscher**  
 GitHub: [https://github.com/aarondweinberg/music_genre_identifier](https://github.com/aarondweinberg/music_genre_identifier)
 
+Huggingface:[https://huggingface.co/spaces/aarondweinberg/music_genre_prediction](https://huggingface.co/spaces/aarondweinberg/music_genre_prediction)
+
 ## Introduction  
 Music genre identification is useful not only for commercial applications like recommendation systems but also for deepening cultural engagement with music. Machine learning approaches have traditionally treated this as a “bucket sorting” problem, but music is experientially and culturally much more connected than discrete buckets. 
 
