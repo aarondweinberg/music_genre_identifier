@@ -161,5 +161,5 @@ Scripts for dataset prep, organization, and file management:
 - [Musicmap_Directory_Renaming.ipynb](./Utilities/Musicmap_Directory_Renaming.ipynb): Converts between Musicmap-style and human-readable folder names
 
 [^1]: Green, O., Sturm, B., Born, G., & Wald-Fuhrmann, M. (2024). A critical survey of research in music genre recognition. *International Society for Music Information Retrieval*.
-[^2] Bertinetto, L., Mueller, R., Tertikas, K., Samangooei, S., & Lord, N. A. (2020). Making better mistakes: Leveraging class hierarchies with deep networks. In *Proceedings of the IEEE/CVF conference on computer vision and pattern recognition* (pp. 12506-12515).
-[^3] Ba, T. C., Le, T. D. T., & Van, L. T. (2025). Music genre classification using deep neural networks and data augmentation. *Entertainment Computing, 53*, 100929.
+[^2]: Bertinetto, L., Mueller, R., Tertikas, K., Samangooei, S., & Lord, N. A. (2020). Making better mistakes: Leveraging class hierarchies with deep networks. In *Proceedings of the IEEE/CVF conference on computer vision and pattern recognition* (pp. 12506-12515).
+[^3]: Ba, T. C., Le, T. D. T., & Van, L. T. (2025). Music genre classification using deep neural networks and data augmentation. *Entertainment Computing, 53*, 100929.
