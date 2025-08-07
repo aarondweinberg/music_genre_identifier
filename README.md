@@ -13,7 +13,7 @@ This project explores whether a neural network can be trained to recognize genre
 We used [Musicmap](https://musicmap.info/), a research-based web resource that categorizes ~250 modern Western music genres and defines inter-genre influences and “supergenre” clusters. From this, we built a weighted graph of genres, supergenres, and clusters of supergenres, and computed distances between them. Inspired by prior work on hierarchical loss functions,[^2] we also created a "soft" loss function that uses the weighted distance between genres, thereby enabling models to prioritize misclassifications that are “closer” in genre space.
 
 ## Data and Features  
-Using Musicmap's curated playlists (~10 songs per genre), we split the songs in each genre into 70/20/10 train/validation/test sets. Following recommendations from the literature[^3], we split each song into 15-second segments and augmented each segment with a version that was pitch-shifted by +1 semitone and a version with pink noise added at a scale of 0.005. We balanced the classes by randomly selecting 24 segments from each song. Then, we used librosa to engineer the following features for each segment:
+Using Musicmap's curated playlists (~10 songs per genre), we split the songs in each genre into 70/20/10 train/validation/test sets. Following recommendations from the literature,[^3] we split each song into 15-second segments and augmented each segment with a version that was pitch-shifted by +1 semitone and a version with pink noise added at a scale of 0.005. We balanced the classes by randomly selecting 24 segments from each song. Then, we used librosa to engineer the following features for each segment:
 - Chromagram
 - Constant-Q chromagram
 - Normalized chroma energy
