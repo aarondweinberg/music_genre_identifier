@@ -1,26 +1,51 @@
-# Classifying Music Genre  
+# Identifying Music Genre  
 **Aaron Weinberg, Emilie Wiesner, Dan Visscher**  
 GitHub: [https://github.com/aarondweinberg/music_genre_identifier](https://github.com/aarondweinberg/music_genre_identifier)
 
 ## Introduction  
-Music genre classification is useful not only for commercial applications like recommendation systems but also for deepening cultural engagement with music. Machine learning approaches have traditionally treated this as a “bucket sorting” problem, but music is experientially and culturally much more connected than discrete buckets. This project explores whether a neural network can be trained to recognize genre with greater contextual sensitivity, informed by genre theory and inter-genre relationships.
+Music genre identification is useful not only for commercial applications like recommendation systems but also for deepening cultural engagement with music. Machine learning approaches have traditionally treated this as a “bucket sorting” problem, but music is experientially and culturally much more connected than discrete buckets. 
+
+Although there has been extensive prior work on identifying the genre of recorded music, this work has been criticized for its narrow use of deep learning tools, dataset limitations, and lack of engagement with genre theory.[^1]
+
+This project explores whether a neural network can be trained to recognize genre with greater contextual sensitivity, informed by genre theory and inter-genre relationships.
 
 ## Approach  
-To address this, we used Musicmap, a web resource that categorizes ~250 modern Western music genres and defines inter-genre influences and “supergenre” clusters. From this, we built a graph of genres, using the Floyd-Warshall algorithm to compute distances between them. These distances were used to generate a soft loss function, enabling models to prioritize misclassifications that are “closer” in genre space.
+We used [Musicmap](https://musicmap.info/), a research-based web resource that categorizes ~250 modern Western music genres and defines inter-genre influences and “supergenre” clusters. From this, we built a weighted graph of genres, supergenres, and clusters of supergenres, and computed distances between them. Inspired by prior work on hierarchical loss functions,[^2] we also created a "soft" loss function that uses the weighted distance between genres, thereby enabling models to prioritize misclassifications that are “closer” in genre space.
 
 ## Data and Features  
-Using Musicmap's curated playlists (~10 songs per genre), we built a balanced dataset of 15-second audio segments. Following best practices, we applied data augmentation (pitch shifting and pink noise) and engineered various features including mel-scaled spectrograms, MFCCs, and chroma features.
+Using Musicmap's curated playlists (~10 songs per genre), we split the songs in each genre into 70/20/10 train/validation/test sets. Following recommendations from the literature[^3], we split each song into 15-second segments and augmented each segment with a version that was pitch-shifted by +1 semitone and a version with pink noise added at a scale of 0.005. We balanced the classes by randomly selecting 24 segments from each song. Then, we used librosa to engineer the following features for each segment:
+- Chromagram
+- Constant-Q chromagram
+- Normalized chroma energy
+- Mel-scaled spectrogram in decibels
+- Mel-scaled spectrogram with per-channel energy normalization
+- Graph of Mel-frequency cepstral coefficients
+- Graphs of Harmonic-percussive source separation mean and median
+
+## Model Creation and Training
+For a baseline, we used progressive unfreezing to fine-tune a ResNet50 architecture with IMAGENET1K_V2 weights, using cross-entropy as the loss function.
+
+We then created five architectures:
+- A "ResNet18flex" architecture that accommodates smaller images by making adjustments to early stride/maxpool values
+- A "ResNet18flex_dual" architecture that uses two features as inputs
+- Custom CNN, GRU, and LSTM architectures suggested by the literature[^3]
+
+We trained and evaluated performance of the ResNet18flex architectures using each type (and pair) of features, identifying the Mel-PCEN spectrograms as leading to the highest performance. We used the same architecture to tune the graph-weight hyperparameters.
+
+We then tuned each model for a range of values of the hyperparameter $$\\beta$$, used in the Soft Loss function.
 
 ## Model Selection and Results  
-We trained multiple architectures, including:  
-- Baseline ResNet50 with cross-entropy loss  
-- Modified ResNet18 variants (with stride/maxpool adjustments)  
-- Dual-input ResNet18 models using paired features  
-- Custom CNN, GRU, and LSTM models from the literature  
 
-To evaluate models, we introduced mean genre distance (based on the Musicmap graph), along with top-3 accuracy and supergenre accuracy. Our best model—a dual-backbone ResNet18 using mel PCEN + MFCC features with a soft loss—achieved:  
+To evaluate models, we introduced mean genre distance (based on the Musicmap graph), along with top-3 accuracy and supergenre accuracy. 
+
+Our baseline model achieved:
+- **Top-3 Accuracy:** 12.4%  
+- **Top-3 Supergenre Accuracy:** 36.6%  
+- **Mean Genre Distance:** 3.54  
+
+Our best model—a dual-backbone ResNet18 using mel PCEN + MFCC features with a soft loss—achieved:  
 - **Top-3 Accuracy:** 24.6%  
-- **Supergenre Accuracy:** 50.8%  
+- **Top-3 Supergenre Accuracy:** 50.8%  
 - **Mean Genre Distance:** 2.44  
 
 Evaluating this model against the reserved test set data showed these metrics are stable.
@@ -30,10 +55,6 @@ Evaluating this model against the reserved test set data showed these metrics ar
 - The Musicmap playlist dataset is relatively small. With only 10 songs per genre, the variation within each genre is still too large to be well-represented. To avoid overfitting the training set, we need more data.  
 - It is unclear whether audio is sufficient for determining genre using this more socially and historically informed notion of genre, particularly with the fine-grained approach taken here.  
 
-
-# Music Genre Classification Project
-
-This repository contains all the code, data, and assets for a music genre classification project using deep learning with graph-based soft labeling.
 
 ## Files
 
@@ -138,3 +159,7 @@ Scripts for dataset prep, organization, and file management:
 - [genre_file_and_folder_renamer.py](./Utilities/genre_file_and_folder_renamer.py): Renames non-Musicmap genre labels
 - [musicmap_data_splitter_featuresaligned.ipynb](./Utilities/musicmap_data_splitter_featuresaligned.ipynb): Splits data and prepares feature folders
 - [Musicmap_Directory_Renaming.ipynb](./Utilities/Musicmap_Directory_Renaming.ipynb): Converts between Musicmap-style and human-readable folder names
+
+[^1]: Green, O., Sturm, B., Born, G., & Wald-Fuhrmann, M. (2024). A critical survey of research in music genre recognition. *International Society for Music Information Retrieval*.
+[^2] Bertinetto, L., Mueller, R., Tertikas, K., Samangooei, S., & Lord, N. A. (2020). Making better mistakes: Leveraging class hierarchies with deep networks. In *Proceedings of the IEEE/CVF conference on computer vision and pattern recognition* (pp. 12506-12515).
+[^3] Ba, T. C., Le, T. D. T., & Van, L. T. (2025). Music genre classification using deep neural networks and data augmentation. *Entertainment Computing, 53*, 100929.
