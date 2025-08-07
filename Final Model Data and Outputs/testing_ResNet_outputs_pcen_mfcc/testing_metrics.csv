@@ -1,0 +1,2 @@
+val_accuracy,top3_accuracy,top5_accuracy,precision,recall,f1,supergenre_accuracy,supergenre_top3_accuracy,mean_distance,std_distance
+0.11863867684478371,top3_accuracy,top5_accuracy,precision,recall,f1,supergenre_accuracy,supergenre_top3_accuracy,mean_distance,std_distance

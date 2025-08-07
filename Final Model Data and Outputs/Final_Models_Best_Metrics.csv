@@ -1,0 +1,9 @@
+Tester,Architecture,Notes,Weights,Features,Targets,Loss Function,epoch,Beta,Graph Weights,train_loss,train_accuracy,val_loss,val_accuracy,top3_accuracy,top5_accuracy,precision,recall,f1,supergenre_accuracy,supergenre_top3_accuracy,mean_distance,std_distance
+AW,CNN,,,Mel PCEN,MusicMap Genres,Soft Labeling,28,1,Default,4.617876276,83.2080%,5.071094845,13.8971%,27.2898%,35.6775%,13.8566%,13.4615%,12.4615%,35.4006%,53.4520%,2.564787388,1.783933282
+AW,CNN,,,Mel PCEN,MusicMap Genres,Soft Labeling,20,1.5,Default,3.59471311,90.2237%,4.72900727,13.6597%,28.1405%,36.6370%,12.6181%,13.2307%,12.0836%,35.1335%,54.5104%,2.72690415,1.85648346
+AW,ResNet18_flex,,,Mel PCEN,MusicMap Genres,Soft Labeling,44,2.5,Default,1.27945359,99.9206%,4.47320602,12.2057%,24.6686%,32.4431%,12.4659%,12.2357%,11.1477%,33.9169%,50.6627%,2.54906034,1.73148429
+AW,ResNet18_flex,,,Mel PCEN,MusicMap Genres,Soft Labeling,27,1.25,Default,3.65806499,99.8957%,4.91161043,11.4639%,23.1355%,30.4847%,14.0219%,11.1677%,10.5237%,34.1048%,49.9505%,2.43738866,1.62048256
+AW,ResNet18_flex_dual,,,Mel PCEN & Chroma_CQ,MusicMap Genres,Soft Labeling,28,1.5,Default,3.02491147,99.8982%,4.7372054,11.6815%,23.9862%,32.2354%,13.5834%,11.7761%,10.5679%,34.4609%,51.8694%,2.44104838,1.63496172
+AW,ResNet18_flex_dual,,,Mel PCEN & Chroma_CQ,MusicMap Genres,Soft Labeling,33,2.5,Default,1.28301758,99.9131%,4.49319394,12.9179%,25.4006%,33.3234%,12.5513%,12.7522%,11.4277%,35.3412%,51.9585%,2.55153322,1.73751497
+AW,ResNet18_flex_dual,,,Mel PCEN & MFCC,MusicMap Genres,Soft Labeling,21,1.5,Default,3.03455429,99.8933%,4.7404081,12.4332%,24.5895%,32.1365%,13.9298%,12.7459%,11.3485%,34.5796%,50.8012%,2.4405539,1.63312757
+AW,ResNet18_flex_dual,,,Mel PCEN & MFCC,MusicMap Genres,Soft Labeling,67,2.5,Default,1.28511447,99.9181%,4.49615177,13.0762%,25.7369%,33.8477%,13.7493%,13.2209%,12.1345%,34.3027%,51.0485%,2.53016806,1.73619509

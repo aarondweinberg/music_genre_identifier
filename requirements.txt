@@ -1,0 +1,43 @@
+# AzureML and core infrastructure
+#azureml-core==1.60.0.post1
+#azureml-dataset-runtime==1.60.0 --no-deps
+#azureml-defaults==1.60.0
+#azure-ml==0.0.1
+#azure-ml-component==0.9.18.post2
+#azureml-mlflow==1.60.0.post1
+#azureml-contrib-services==1.60.0
+#azureml-inference-server-http
+#inference-schema
+
+# ML + Deep Learning
+torch>=2.1.0
+torchvision>=0.16.0
+optuna>=3.0.0
+scikit-learn>=1.3.0
+numpy>=1.24.0
+pandas>=2.0.0
+tqdm>=4.66.3
+tensorboard
+torch-tb-profiler>=0.4.0
+psutil>=5.8.0
+py-cpuinfo==5.0.0
+
+# Visualization
+matplotlib>=3.5.0
+seaborn
+networkx
+pyvis
+tabulate
+pillow
+
+# Other utilities
+MarkupSafe==2.1.2
+regex
+pybind11
+urllib3>=1.26.18
+cryptography>=42.0.4
+aiohttp>=3.8.5
+py-spy==0.3.12
+debugpy~=1.6.3
+ipykernel~=6.0
+beautifulsoup4

@@ -1,0 +1,290 @@
+﻿Code,Label,Type,Supergenre
+cla,CLASSICAL,genre,cla
+fol,FOLK,genre,fol
+static01,TIN PAN ALLEY POP MUSIC,static,
+static02,JUG BANDS SKIFFLE,static,
+static03,ELECTRONIC SOUND,static,
+uti,UTILITY,genre,uti
+wor,WORLD,same-color_cluster,
+woA,WORLD CUBAN,super-genre,
+woA13,SALSA,genre,woA
+woA09,MAMBO,genre,woA
+woB,WORLD LATIN,super-genre,
+woB02,BOMBA,genre,woB
+woB04,BOSSA NOVA,genre,woB
+woB05,CALPYSO,genre,woB
+woC,WORLD POP,super-genre,
+woC08,INDIAN RAGA,genre,woC
+woC10,AFROBEAT,genre,woC
+woC14,CAJUN,genre,woC
+woC07,BHANGRA,genre,woC
+woC08,INDIAN RAGA,genre,woC
+uti01,RELIGIOUS,static-genre,
+uti02,MILITARY,static-genre,
+uti03,MUSICALS,static-genre,
+hou,HOUSE,super-genre,
+jaz,JAZZ,super-genre,
+alt,ALTERNATIVE,super-genre,
+dtp,DOWNTEMPO,super-genre,
+tec,TECHNO,super-genre,
+rnr,ROCK 'N' ROLL,super-genre,
+cou,COUNTRY,super-genre,
+pwv,PUNK / WAVE,super-genre,
+pop,POP,super-genre,
+brb,BREAKBEAT,super-genre,
+gld,GOLDEN AGE,super-genre,
+met,METAL,super-genre,
+rnb,RHYTHM 'N' BLUES,super-genre,
+blu,BLUES,super-genre,
+hct,HARDCORE TECHNO,super-genre,
+tra,TRANCE,super-genre,
+hcp,HARDCORE PUNK,super-genre,
+jam,JAMAICAN,super-genre,
+con,CONTEMPORARY,super-genre,
+dnb,DRUM 'N' BASS,super-genre,
+rap,RAP,super-genre,
+ind,INDUSTRIAL,super-genre,
+gos,GOSPEL,super-genre,
+rock,ROCK,same-color_cluster,
+blue_note,BLUE NOTE,same-color_cluster,
+breakbeat_dance,BREAKBEAT DANCE,same-color_cluster,
+four_to_the_floor,FOUR TO THE FLOOR,same-color_cluster,
+edm,ELECTRONIC DANCE MUSIC,same-color_cluster,
+heavy,HEAVY,cross-color_cluster,
+poprock,POP-ROCK,cross-color_cluster,
+rhythm,RHYTHM MUSIC,cross-color_cluster,
+electronic,ELECTRONIC MUSIC,cross-color_cluster,
+hou02,ACID HOUSE,genre,hou
+jaz14,ACID JAZZ / JAZZDANCE,genre,jaz
+alt07,ALTERNATIVE ROCK / INDIE II,genre,alt
+dtp06,AMBIENT,genre,dtp
+dtp11,AMBIENT BREAKS &ILLBIENT,genre,dtp
+dtp09,AMBIENT HOUSE / CHILL-OUT,genre,dtp
+tec03,AMBIENT TECHNO &IDM (INTELLIGENT DANCE MUSIC),genre,tec
+rnr03,AMERICAN &BRITISH FOLK REVIVAL,genre,rnr
+cou11,AMERICANA / ALTERNATIVE COUNTRY,genre,cou
+pwv03,"ANARCHO-PUNK, CRUST PUNK &D-BEAT / DISCORE",genre,pwv
+pop09,ASIAN POP,genre,pop
+cou05,BAKERSFIELD,genre,cou
+brb10,BASSLINE &UK FUNKY,genre,brb
+gld01,(MERSEY)BEAT / BRITISH INVASION,genre,gld
+jaz06,BEBOP,genre,jaz
+dtp07,BIT MUSIC / VGM (CHIPTUNE &8-BIT),genre,dtp
+met11,BLACK METAL,genre,met
+cou04,BLUEGRASS,genre,cou
+rnb10,BOOGIE / ELECTROFUNK,genre,rnb
+blu03,BOOGIE WOOGIE / PIANO BLUES,genre,blu
+brb09,BREAKBEAT GARAGE &GRIME,genre,brb
+hct03,BREAKBEAT HARDCORE (RAVE II),genre,hct
+pop01,BRILL BUILDING POP,genre,pop
+blu09,BRITISH BLUES &BLUES ROCK,genre,blu
+pop10,BRITPOP,genre,pop
+brb08,BROKEN BEATS,genre,brb
+pop02,BUBBLEGUM &TEENYBOP,genre,pop
+brb05,CHEMICAL BREAKS &BIG BEAT,genre,brb
+blu06,CHICAGO BLUES / CITY BLUES / URBAN BLUES,genre,blu
+hou01,CHICAGO HOUSE &GARAGE HOUSE,genre,hou
+jaz02,CHICAGO JAZZ,genre,jaz
+rnb04,CHICAGO SOUL &DETROIT SOUL (MOTOWN),genre,rnb
+cou01,CLASSIC COUNTRY / HILLBILLY,genre,cou
+met01,CLASSIC METAL,genre,met
+tra01,CLASSIC TRANCE &ACID TRANCE,genre,tra
+cou10,CONTEMPORARY COUNTRY / NEOTRADITIONALISTS,genre,cou
+jaz07,COOL JAZZ &WEST COAST JAZZ,genre,jaz
+blu01,COUNTRY BLUES / FOLK BLUES,genre,blu
+cou07,COUNTRY POP &COUNTRY ROCK,genre,cou
+hcp02,CROSSOVER THRASH,genre,hcp
+pop11,DANCE POP,genre,pop
+jam08,DANCEHALL,genre,jam
+con06,DANCE-PUNK &NU RAVE,genre,con
+inl06,DARK AMBIENT / DARK INDUSTRIAL,genre,inl
+dnb02,DARKCORE &DARKSTEP,genre,dnb
+inl07,DARKWAVE &COLDWAVE,genre,inl
+met09,DEATH METAL,genre,met
+rnb09,DEEP FUNK / RARE GROOVE &NU FUNK,genre,rnb
+hou04,DEEP HOUSE,genre,hou
+tec01,DETROIT TECHNO,genre,tec
+hct07,DIGITAL HARDCORE &BREAKCORE,genre,hct
+dtp13,DIGITAL MINIMALISM / LOWERCASE,genre,dtp
+rnb07,DISCO,genre,rnb
+pop07,DISCOPOP / POST-DISCO,genre,pop
+rnb02,DOO WOP,genre,rnb
+met08,DOOM METAL,genre,met
+alt03,DREAM POP &SHOEGAZE,genre,alt
+jam05,DUB,genre,jam
+dnb08,DUBSTEP,genre,dnb
+rnb06,EARLY FUNK &P-FUNK,genre,rnb
+rap08,EAST COAST GANGSTA RAP,genre,rap
+brb11,EDM TRAP / TRAPSTEP,genre,brb
+brb01,ELECTRO,genre,brb
+hou09,ELECTRO HOUSE &DUTCH HOUSE,genre,hou
+pop13,ELECTROPOP,genre,pop
+jaz17,ELECTRO SWING,genre,jaz
+pop12,ELECTROCLASH,genre,pop
+inr09,ELECTRO-INDUSTRIAL / AGGREPPO,genre,inr
+inr04,ELECTRONIC BODY MUSIC,genre,inr
+con02,EMO-ROCK,genre,con
+tra06,EUROTRANCE &VOCAL TRANCE,genre,tra
+met07,EXTREME METAL (BLACK I &SPEED),genre,met
+hou10,FIDGET HOUSE &COMPLEXTRO,genre,hou
+brb03,FLORIDA BREAKS (&FUNKY BREAKS),genre,brb
+gld02,FOLK ROCK,genre,gld
+jaz10,FREE JAZZ / AVANT-GARDE (JAZZ),genre,jaz
+brb02,FREESTYLE &BREAKDANCE,genre,brb
+hou06,FRENCH HOUSE &FUNKY HOUSE,genre,hou
+jaz11,FUSION / JAZZ ROCK,genre,jaz
+dnb10,FUTURE BASS / FUTURE GARAGE,genre,dnb
+inr10,FUTUREPOP,genre,inr
+hct04,(EARLY) GABBER,genre,hct
+rap04,(WEST COAST) GANGSTA RAP,genre,rap
+con03,GARAGE &POST-PUNK REVIVALS / NU-RAWK,genre,con
+rnr05,GARAGE ROCK,genre,rnr
+hou08,"GHETTO HOUSE, GHETTOTECH & JUKE",genre,hou
+met04,GLAM METAL / HAIR METAL / POP METAL,genre,met
+gld06,GLAM ROCK / GLITTER ROCK / SHOCK ROCK,genre,gld
+dtp12,GLITCH / CLICKS 'N' CUTS,genre,dtp
+rap11,GLITCH HOP &WONKY,genre,rap
+tra04,GOA TRANCE &PSYTRANCE,genre,tra
+rnb08,GO-GO,genre,rnb
+rap02,GOLDEN AGE RAP (&HARDCORE RAP),genre,rap
+inl03,GOTHIC ROCK &DEATHROCK,genre,inl
+hcp03,GRINDCORE,genre,hcp
+alt04,GRUNGE,genre,alt
+hct05,HAPPY HARDCORE &BOUNCY TECHNO,genre,hct
+jaz08,HARD BOP,genre,jaz
+gld04,HARD ROCK,genre,gld
+hct02,HARDCORE TECHNO / RAVE,genre,hct
+dnb03,HARDSTEP &TECHSTEP,genre,dnb
+hct09,HARDSTYLE (&JUMPSTYLE),genre,hct
+tec08,HARDTECHNO (SCHRANZ II),genre,tec
+tra07,HARDTRANCE,genre,tra
+gld08,HEARTLAND ROCK &A.O.R. (ADULT ORIENTED ROCK),genre,gld
+blu12,HILL COUNTRY BLUES &TRANCE BLUES,genre,blu
+pop06,HI-NRG / EURODISCO,genre,pop
+hou03,HIP HOUSE &EURODANCE,genre,hou
+cou03,HONKY TONK / HARDCORE COUNTRY,genre,cou
+pwv07,HORROR PUNK &PSYCHOBILLY,genre,pwv
+tra03,IBIZA HOUSE / TRANCE &DREAM HOUSE / TRANCE,genre,tra
+con07,INDIE FOLK &FREAKFOLK / NEW WEIRD AMERICA,genre,con
+pop08,INDIE POP (TWEE),genre,pop
+con05,INDIETRONICA &CHILLWAVE,genre,con
+inl02,(AVANT-GARDE) INDUSTRIAL,genre,inl
+inl08,INDUSTRIAL ROCK / INDUSTRIAL METAL,genre,inl
+tec04,INDUSTRIAL TECHNO &SCHRANZ,genre,tec
+dnb05,INTELLIGENT / AMBIENT DRUM 'N' BASS &JAZZSTEP,genre,dnb
+alt01,JANGLE POP / INDIE ROCK (&PAISLEY UNDERGROUND),genre,alt
+rap05,JAZZ RAP / NATIVE TONGUE,genre,rap
+blu05,JUMP BLUES,genre,blu
+dnb04,JUMP UP,genre,dnb
+inl01,KRAUTROCK,genre,inl
+dnb07,LIQUID FUNK,genre,dnb
+blu08,LOUISIANA BLUES / SWAMP BLUES,genre,blu
+dtp02,LOUNGE / EXOTICA / SPACE AGE POP,genre,dtp
+jam06,LOVER'S ROCK &UK REGGAE,genre,jam
+hcp05,MATH ROCK &MATHCORE,genre,hcp
+rnb03,MEMPHIS SOUL / DEEP SOUL / SOUTHERN SOUL,genre,rnb
+jam01,MENTO,genre,jam
+hcp06,METALCORE / NEW WAVE OF AMERICAN HEAVY METAL,genre,hcp
+rap03,MIAMI BASS &BOUNCE,genre,rap
+hou07,MICROHOUSE / MINIMAL HOUSE,genre,hou
+tec05,MINIMAL TECHNO,genre,tec
+inl11,MINIMAL WAVE / SYNTH &MINIMAL INDUSTRIAL (REVIVAL),genre,inl
+dtp03,MINIMALISM,genre,dtp
+gos04,MODERN GOSPEL,genre,gos
+hou11,MOOMBAHTON,genre,hou
+dtp01,MUSIQUE CONCRETE,genre,dtp
+dtp04,MUZAK / ELEVATOR MUSIC,genre,dtp
+cou06,NASHVILLE / COUNTRYPOLITAN,genre,cou
+rnb12,NEO SOUL / NU SOUL,genre,rnb
+tra09,NEO-TRANCE,genre,tra
+dnb06,NEUROFUNK,genre,dnb
+dtp08,NEW AGE,genre,dtp
+hct01,NEW BEAT,genre,hct
+rnb11,NEW JACK SWING / SWINGBEAT,genre,rnb
+jaz05,NEW ORLEANS &DIXIELAND JAZZ REVIVALS,genre,jaz
+jaz01,NEW ORLEANS JAZZ &DIXIELAND JAZZ,genre,jaz
+con04,NEW PROG / NU PROG / POST PROG (ROCK),genre,con
+pwv06,NEW WAVE,genre,pwv
+pwv05,NO WAVE,genre,pwv
+inr05,NOISE MUSIC,genre,inr
+alt02,NOISE ROCK,genre,alt
+jaz16,NORDIC JAZZ,genre,jaz
+hou05,"NRG, HARD NRG &(UK) HARD HOUSE",genre,hou
+jaz15,NU JAZZ / ELECTRO JAZZ,genre,jaz
+met13,NU METAL &RAP METAL,genre,met
+brb07,NU SKOOL BREAKS,genre,brb
+hct10,NU STYLE (GABBER) / MAINSTREAM HARDCORE,genre,hct
+rnb14,NU-DISCO &FUNKTRONICA,genre,rnb
+met05,NWOBHM (NEW WAVE OF BRITISH HEAVY METAL),genre,met
+dnb01,OLD SKOOL JUNGLE &OLD SKOOL DRUM 'N' BASS,genre,dnb
+rap01,OLD SKOOL RAP PIONEERS,genre,rap
+hcp01,ORIGINAL HARDCORE (PUNK),genre,hcp
+rnb05,PHILLY SOUL,genre,rnb
+pop04,(EARLY) POP ROCK &POWER POP,genre,pop
+con01,POST-BRITPOP,genre,con
+dnb09,POST-DUBSTEP,genre,dnb
+alt08,POST-GRUNGE,genre,alt
+hcp04,"POST-HARDCORE, EMO(CORE) &SCREAMO",genre,hcp
+pwv04,POST-PUNK,genre,pwv
+alt09,POST-ROCK,genre,alt
+met03,POWER METAL,genre,met
+cou08,PROGRESSIVE COUNTRY &OUTLAW COUNTRY,genre,cou
+hou12,PROGRESSIVE HOUSE,genre,hou
+met02,PROGRESSIVE METAL,genre,met
+rap06,PROGRESSIVE RAP / NU SKOOL RAP,genre,rap
+gld05,"PROGRESSIVE ROCK, ART ROCK &SYMPHONIC ROCK",genre,gld
+tra05,PROGRESSIVE TRANCE,genre,tra
+gld03,PSYCHEDELIC / ACID ROCK &PSYCHEDELIA,genre,gld
+pwv01,PUB ROCK &PROTO PUNK,genre,pwv
+pwv02,PUNK ROCK,genre,pwv
+jam09,RAGGA,genre,jam
+gos03,RAGTIME &STRIDE,genre,gos
+alt05,"RAP ROCK, RAPCORE &FUNK METAL",genre,alt
+jam04,(ROOTS) REGGAE,genre,jam
+jam10,REGGAE FUSION &BHANGRAMUFFIN,genre,jam
+jam11,REGGAETÓN &LATIN RAP,genre,jam
+gos05,RELIPOP &-ROCK / CONTEMPORARY CHRISTIAN MUSIC,genre,gos
+rnb01,(EARLY) RHYTHM 'N' BLUES,genre,rnb
+rnr02,ROCK 'N ROLL &ROCKABILLY,genre,rnr
+jam03,ROCKSTEADY,genre,jam
+pop14,SCHLAGER,genre,pop
+pop03,SINGER/SONGWRITER,genre,pop
+jam02,SKA,genre,jam
+jam07,"SKA REVIVAL (2-TONE), SKA PUNK &SKACORE",genre,jam
+alt06,SKATE PUNK &POP PUNK,genre,alt
+rnr01,SKIFFLE (REVIVAL),genre,rnr
+jaz12,SMOOTH JAZZ,genre,jaz
+pop05,SOFT ROCK / ADULT CONTEMPORARY (A.C.),genre,pop
+blu11,SOUL BLUES (SOUTHERN SOUL II),genre,blu
+jaz09,SOUL JAZZ / JAZZ FUNK,genre,jaz
+gld07,SOUTHERN ROCK,genre,gld
+rap07,"(DIRTY) SOUTH RAP, CRUNK &SNAP",genre,rap
+hct06,"SPEEDCORE, FRENCHCORE &TERRORCORE",genre,hct
+gos01,(NEGRO) SPIRITUALS &WORKSONGS,genre,gos
+met10,STONER METAL / ROCK &SLUDGE METAL / ROCK,genre,met
+rnr04,SURF ROCK / INSTRUMENTAL,genre,rnr
+jaz03,SWING / BIG BAND,genre,jaz
+met12,SYMPHONIC METAL &GOTHIC METAL,genre,met
+dtp05,SYNTH / ELECTRONICA,genre,dtp
+hcp07,SYNTHCORE &CRUNKCORE,genre,hcp
+pwv08,SYNTHPOP &NEW ROMANTICS,genre,pwv
+dtp14,SYNTHWAVE &VAPORWAVE,genre,dtp
+tec06,TECH HOUSE,genre,tec
+tec07,TECH TRANCE,genre,tec
+tec02,(FREE)TEK(K)NO,genre,tec
+blu04,(ELECTRIC) TEXAS BLUES,genre,blu
+blu10,TEXAS BLUESROCK &MODERN ELECTRIC BLUES,genre,blu
+jaz04,THIRD STREAM / PROGRESSIVE JAZZ &MODAL JAZZ,genre,jaz
+met06,THRASH METAL,genre,met
+gos02,TRADITIONAL GOSPEL,genre,gos
+rap09,TRAP &DRILL,genre,rap
+brb04,TRIP HOP,genre,brb
+brb06,UK GARAGE (2-STEP &SPEED GARAGE),genre,brb
+hct08,UK HARDCORE &FREEFORM / TRANCECORE &ACIDCORE,genre,hct
+tra08,UPLIFTING TRANCE / EPIC TRANCE,genre,tra
+rap10,URBAN BREAKS (NU R&B II),genre,rap
+cou09,URBAN COUNTRY,genre,cou
+rnb13,URBAN SOUL / POP (NU R&B I),genre,rnb
+blu02,VAUDEVILLE / CLASSIC BLUES,genre,blu
+blu07,WEST COAST BLUES,genre,blu
+cou02,WESTERN SWING,genre,cou

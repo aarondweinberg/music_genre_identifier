@@ -1,0 +1,8 @@
+Using GPU: NVIDIA H100 NVL
+/mnt/azureml/cr/j/c2a7befeb7e647c7925eb9ab7740ec30/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:233: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances_tensor = torch.tensor(distances, dtype=torch.float32)
++------------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+| Test Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1     | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++============+=============+=============+=============+==========+========+==================+===============+=============+============+
+| 11.86%     | 24.63%      | 32.44%      | 13.89%      | 11.49%   | 10.77% | 34.09%           | 51.53%        |      2.3851 |     1.5639 |
++------------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+

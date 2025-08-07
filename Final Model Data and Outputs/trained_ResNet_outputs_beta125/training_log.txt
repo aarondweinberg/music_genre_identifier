@@ -1,0 +1,373 @@
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+[Epoch 1] New best mean_distance: 3.4200
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+-------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1    | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+=======+==================+===============+=============+============+
+|       1 |       4.9952 | 5.79%       |     5.0556 | 5.18%     | 13.35%      | 19.54%      | 4.36%       | 5.19%    | 3.00% | 22.24%           | 40.15%        |        3.42 |     1.8826 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+-------+------------------+---------------+-------------+------------+
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+[Epoch 2] New best mean_distance: 3.1997
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+-------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1    | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+=======+==================+===============+=============+============+
+|       2 |       4.7507 | 14.39%      |     4.9751 | 7.97%     | 17.70%      | 25.26%      | 8.35%       | 7.46%    | 5.50% | 25.91%           | 41.49%        |      3.1997 |     1.9352 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+-------+------------------+---------------+-------------+------------+
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+No improvement in mean_distance for 1 epoch(s).
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+-------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1    | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+=======+==================+===============+=============+============+
+|       3 |       4.5928 | 23.87%      |     5.0903 | 7.30%     | 16.55%      | 22.86%      | 8.25%       | 7.22%    | 5.64% | 23.44%           | 39.10%        |      3.3177 |     1.8299 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+-------+------------------+---------------+-------------+------------+
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+[Epoch 4] New best mean_distance: 3.0799
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+-------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1    | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+=======+==================+===============+=============+============+
+|       4 |       4.4478 | 34.76%      |     5.0208 | 9.83%     | 22.48%      | 30.53%      | 11.19%      | 9.60%    | 7.61% | 29.16%           | 44.63%        |      3.0799 |     1.9014 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+-------+------------------+---------------+-------------+------------+
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+[Epoch 5] New best mean_distance: 2.8295
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1     | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+========+==================+===============+=============+============+
+|       5 |       4.2161 | 54.18%      |     4.9786 | 11.71%    | 24.44%      | 33.31%      | 11.60%      | 11.45%   | 10.02% | 32.26%           | 48.66%        |      2.8295 |     1.8453 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+[Epoch 6] New best mean_distance: 2.7712
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1     | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+========+==================+===============+=============+============+
+|       6 |       4.0814 | 66.59%      |     4.9457 | 12.09%    | 24.46%      | 32.33%      | 11.98%      | 11.68%   | 10.40% | 32.95%           | 48.85%        |      2.7712 |     1.7979 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+[Epoch 7] New best mean_distance: 2.7307
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1     | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+========+==================+===============+=============+============+
+|       7 |       3.9781 | 76.20%      |     4.9523 | 11.61%    | 23.61%      | 31.47%      | 11.93%      | 11.61%   | 10.38% | 33.34%           | 50.41%        |      2.7307 |      1.811 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+[Epoch 8] New best mean_distance: 2.6468
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1     | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+========+==================+===============+=============+============+
+|       8 |       3.8407 | 89.65%      |     4.9457 | 11.78%    | 23.48%      | 31.13%      | 12.61%      | 11.61%   | 11.10% | 33.24%           | 49.45%        |      2.6468 |     1.7381 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+[Epoch 9] New best mean_distance: 2.5671
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1     | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+========+==================+===============+=============+============+
+|       9 |       3.7914 | 94.13%      |     4.9418 | 11.76%    | 23.74%      | 31.91%      | 12.98%      | 11.57%   | 10.97% | 33.10%           | 49.66%        |      2.5671 |     1.7068 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+No improvement in mean_distance for 1 epoch(s).
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1     | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+========+==================+===============+=============+============+
+|      10 |       3.7652 | 96.39%      |     4.9444 | 11.10%    | 22.85%      | 31.15%      | 12.87%      | 10.84%   | 10.44% | 33.25%           | 49.45%        |      2.5866 |     1.6922 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+[Epoch 11] New best mean_distance: 2.5124
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1     | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+========+==================+===============+=============+============+
+|      11 |       3.7218 | 98.81%      |     4.9185 | 11.98%    | 24.38%      | 32.62%      | 13.64%      | 11.84%   | 11.09% | 34.35%           | 50.48%        |      2.5124 |     1.6883 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+[Epoch 12] New best mean_distance: 2.5068
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1     | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+========+==================+===============+=============+============+
+|      12 |       3.7067 | 99.32%      |     4.9223 | 11.73%    | 24.29%      | 32.76%      | 14.08%      | 11.41%   | 10.98% | 34.25%           | 50.34%        |      2.5068 |     1.6772 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+[Epoch 13] New best mean_distance: 2.5059
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1     | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+========+==================+===============+=============+============+
+|      13 |       3.7009 | 99.56%      |     4.9311 | 11.19%    | 23.12%      | 31.09%      | 13.50%      | 10.89%   | 10.38% | 33.54%           | 50.29%        |      2.5059 |     1.6428 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+[Epoch 14] New best mean_distance: 2.4931
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1     | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+========+==================+===============+=============+============+
+|      14 |       3.6859 | 99.79%      |     4.9109 | 11.57%    | 23.37%      | 31.53%      | 13.91%      | 11.34%   | 10.92% | 33.83%           | 50.47%        |      2.4931 |     1.6512 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+[Epoch 15] New best mean_distance: 2.4721
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1     | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+========+==================+===============+=============+============+
+|      15 |       3.6798 | 99.82%      |      4.905 | 11.82%    | 23.74%      | 31.19%      | 13.48%      | 11.43%   | 11.00% | 33.98%           | 50.57%        |      2.4721 |     1.6557 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+No improvement in mean_distance for 1 epoch(s).
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1     | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+========+==================+===============+=============+============+
+|      16 |       3.6772 | 99.83%      |     4.9157 | 11.24%    | 23.21%      | 30.50%      | 13.66%      | 10.99%   | 10.60% | 34.03%           | 50.23%        |      2.5032 |     1.6567 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+[Epoch 17] New best mean_distance: 2.4697
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1     | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+========+==================+===============+=============+============+
+|      17 |       3.6705 | 99.88%      |     4.9102 | 11.47%    | 23.23%      | 31.16%      | 13.72%      | 11.30%   | 10.68% | 33.97%           | 49.95%        |      2.4697 |     1.6456 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+No improvement in mean_distance for 1 epoch(s).
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1     | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+========+==================+===============+=============+============+
+|      18 |       3.6681 | 99.91%      |      4.911 | 11.27%    | 23.17%      | 30.71%      | 13.32%      | 11.04%   | 10.36% | 33.87%           | 50.48%        |      2.4739 |     1.6344 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+[Epoch 19] New best mean_distance: 2.4590
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1     | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+========+==================+===============+=============+============+
+|      19 |       3.6661 | 99.88%      |     4.9129 | 11.36%    | 23.35%      | 31.37%      | 13.96%      | 11.09%   | 10.64% | 34.01%           | 50.11%        |       2.459 |     1.6394 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+No improvement in mean_distance for 1 epoch(s).
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1     | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+========+==================+===============+=============+============+
+|      20 |       3.6636 | 99.88%      |      4.908 | 11.46%    | 23.35%      | 31.24%      | 13.83%      | 11.14%   | 10.57% | 34.18%           | 50.20%        |      2.4621 |     1.6468 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+[Epoch 21] New best mean_distance: 2.4536
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1     | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+========+==================+===============+=============+============+
+|      21 |       3.6628 | 99.91%      |     4.9099 | 11.37%    | 22.96%      | 30.79%      | 14.13%      | 11.13%   | 10.64% | 34.13%           | 49.94%        |      2.4536 |     1.6337 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+[Epoch 22] New best mean_distance: 2.4466
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1     | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+========+==================+===============+=============+============+
+|      22 |       3.6613 | 99.90%      |     4.9092 | 11.48%    | 22.82%      | 30.84%      | 14.23%      | 11.16%   | 10.66% | 34.04%           | 50.28%        |      2.4466 |     1.6256 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+No improvement in mean_distance for 1 epoch(s).
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1     | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+========+==================+===============+=============+============+
+|      23 |       3.6602 | 99.90%      |     4.9119 | 11.34%    | 23.23%      | 30.69%      | 13.86%      | 11.15%   | 10.60% | 34.34%           | 50.16%        |        2.45 |     1.6297 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+No improvement in mean_distance for 2 epoch(s).
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1     | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+========+==================+===============+=============+============+
+|      24 |         3.66 | 99.91%      |     4.9097 | 11.31%    | 23.14%      | 30.62%      | 14.13%      | 11.07%   | 10.54% | 34.11%           | 50.15%        |      2.4519 |     1.6307 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+No improvement in mean_distance for 3 epoch(s).
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1     | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+========+==================+===============+=============+============+
+|      25 |       3.6595 | 99.89%      |     4.9088 | 11.34%    | 22.89%      | 30.71%      | 13.87%      | 11.06%   | 10.43% | 34.21%           | 50.14%        |      2.4548 |     1.6283 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+No improvement in mean_distance for 4 epoch(s).
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1     | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+========+==================+===============+=============+============+
+|      26 |       3.6584 | 99.90%      |     4.9114 | 11.37%    | 23.02%      | 30.67%      | 14.13%      | 11.12%   | 10.53% | 34.01%           | 50.17%        |      2.4612 |     1.6312 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+[Epoch 27] New best mean_distance: 2.4374
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1     | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+========+==================+===============+=============+============+
+|      27 |       3.6581 | 99.90%      |     4.9116 | 11.46%    | 23.14%      | 30.48%      | 14.02%      | 11.17%   | 10.52% | 34.10%           | 49.95%        |      2.4374 |     1.6205 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+No improvement in mean_distance for 1 epoch(s).
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1     | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+========+==================+===============+=============+============+
+|      28 |       3.6582 | 99.91%      |     4.9149 | 11.25%    | 23.11%      | 30.66%      | 14.00%      | 11.02%   | 10.42% | 34.21%           | 50.23%        |      2.4531 |     1.6364 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+No improvement in mean_distance for 2 epoch(s).
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1     | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+========+==================+===============+=============+============+
+|      29 |       3.6581 | 99.91%      |     4.9071 | 11.46%    | 22.87%      | 30.67%      | 14.10%      | 11.15%   | 10.61% | 34.11%           | 50.19%        |      2.4523 |     1.6302 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+No improvement in mean_distance for 3 epoch(s).
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1     | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+========+==================+===============+=============+============+
+|      30 |       3.6573 | 99.92%      |     4.9071 | 11.15%    | 22.87%      | 30.52%      | 13.92%      | 10.81%   | 10.32% | 34.02%           | 49.78%        |      2.4449 |     1.6177 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+No improvement in mean_distance for 4 epoch(s).
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1     | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+========+==================+===============+=============+============+
+|      31 |        3.657 | 99.91%      |     4.9096 | 11.17%    | 22.99%      | 30.83%      | 14.02%      | 10.90%   | 10.39% | 34.04%           | 50.10%        |      2.4484 |     1.6213 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+No improvement in mean_distance for 5 epoch(s).
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1     | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+========+==================+===============+=============+============+
+|      32 |        3.657 | 99.91%      |     4.9095 | 11.20%    | 23.18%      | 30.66%      | 13.61%      | 10.96%   | 10.29% | 34.18%           | 50.04%        |      2.4533 |     1.6314 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+No improvement in mean_distance for 6 epoch(s).
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1     | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+========+==================+===============+=============+============+
+|      33 |       3.6569 | 99.91%      |     4.9119 | 11.07%    | 23.18%      | 30.46%      | 13.65%      | 10.80%   | 10.21% | 33.78%           | 50.08%        |      2.4514 |      1.625 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+No improvement in mean_distance for 7 epoch(s).
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1     | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+========+==================+===============+=============+============+
+|      34 |        3.657 | 99.89%      |     4.9086 | 11.35%    | 23.01%      | 30.42%      | 14.06%      | 11.04%   | 10.51% | 34.06%           | 49.87%        |      2.4487 |     1.6278 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+No improvement in mean_distance for 8 epoch(s).
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1     | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+========+==================+===============+=============+============+
+|      35 |        3.657 | 99.91%      |     4.9086 | 11.48%    | 22.92%      | 30.87%      | 13.64%      | 11.19%   | 10.51% | 34.34%           | 49.97%        |      2.4483 |     1.6391 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+No improvement in mean_distance for 9 epoch(s).
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1     | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+========+==================+===============+=============+============+
+|      36 |       3.6568 | 99.91%      |     4.9075 | 11.21%    | 23.15%      | 30.65%      | 13.61%      | 10.87%   | 10.32% | 34.11%           | 49.93%        |      2.4537 |     1.6311 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/exe/wd/training_ResNet18flex.py:209: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=torch.cuda.is_available())
+/mnt/azureml/cr/j/247ed9bd2e60488aadfc82e0ebf622ff/cap/data-capability/wd/INPUT_rootdir/musicmap_helpers.py:140: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  distances = torch.tensor(distances)  # convert back to Tensor for .mean()/.std()
+No improvement in mean_distance for 10 epoch(s).
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+|   Epoch |   Train Loss | Train Acc   |   Val Loss | Val Acc   | Top-3 Acc   | Top-5 Acc   | Precision   | Recall   | F1     | Supergenre Acc   | Top-3 Super   |   Mean Dist |   Std Dist |
++=========+==============+=============+============+===========+=============+=============+=============+==========+========+==================+===============+=============+============+
+|      37 |       3.6568 | 99.91%      |     4.9084 | 11.37%    | 23.14%      | 30.60%      | 14.07%      | 11.09%   | 10.50% | 34.32%           | 50.19%        |      2.4449 |     1.6267 |
++---------+--------------+-------------+------------+-----------+-------------+-------------+-------------+----------+--------+------------------+---------------+-------------+------------+
+Early stopping triggered after 10 epochs of no improvement.
+Best model saved with mean_distance: 2.4374
+SWA model saved from averaged checkpoints.
