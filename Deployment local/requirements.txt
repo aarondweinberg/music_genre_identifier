@@ -1,0 +1,17 @@
+gradio
+torch
+librosa
+torchvision
+matplotlib
+seaborn
+pyvis
+tabulate
+soundfile
+ffmpeg-python
+scikit-learn
+numpy
+Pillow
+networkx
+scipy
+torchaudio
+requests
